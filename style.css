@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    border: 2px solid #ffffff;
+    border-radius: 15px;  /* Rounded corners */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+#text-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    line-height: 1.5;
+    width: 100%;
+    color: #ffffff;
+}
+
+.correct {
+    color: #00ff00;  /* Green for correct characters */
+}
+
+.incorrect {
+    color: #ff0000;  /* Red for incorrect characters */
+}
+
+#caret {
+    display: inline-block;
+    width: 2px;
+    background-color: #ffffff;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+}
+
+#wpm-counter {
+    font-size: 1.5rem;
+}
+
+.card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.9rem;
+    color: #ffffff;
+}

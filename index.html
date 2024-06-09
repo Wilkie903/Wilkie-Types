@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Practice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Wilkie Types</h1>
+    <pre>Rules: You have 30 seconds to type as much as possible of these random commonly used words.
+             -as soon as you click restart the timer starts so be quick
+    </pre>
+    <div id="game-container">
+        <div id="text-container">
+            <span id="text-to-type"></span>
+            <span id="caret"></span>
+        </div>
+    </div>
+    <div id="info-container">
+        <div id="wpm-counter">WPM: 0</div>
+        <button id="restart-button" onclick="restartGame()">Restart</button>
+    </div>
+    <div id="footer">Made by Jack Wilkinson</div>
+    <script src="script.js"></script>
+</body>
+</html>
